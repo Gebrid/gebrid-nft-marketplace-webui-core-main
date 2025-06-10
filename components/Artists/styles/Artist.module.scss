@@ -1,0 +1,66 @@
+.artistCard {
+  width: 278px;
+  //height: 306px;
+  margin: 42px auto;
+  padding: 24px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  .imageWrapper {
+    width: 174px;
+    height: 174px;
+    border-radius: 174px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.artistCardDark {
+  background: #474747;
+}
+
+.artistCardLight {
+  background: white;
+  border: solid 1px rgba(51, 51, 51, 0.3);
+}
+
+.artistFooter {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 8px 0;
+  text-align: left;
+}
+
+.artistTitle {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.artistHeart {
+  //background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+  //background-clip: text;
+  //text-fill-color: transparent;
+  color: #B364E2;
+}
+
+.artistName {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: left;
+}
+
+@media screen and (max-width: 320px) {
+  .artistCard {
+    margin: 16px 0 24px;
+  }
+}

@@ -1,0 +1,145 @@
+//CATEGORY
+.category {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0) 50%, rgba(51, 51, 51, 0.8) 118.73%);
+  overflow: hidden;
+
+  .categoryText {
+    position: absolute;
+    line-height: 130%;
+
+    .categoryTitle {
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+    }
+
+    .categorySubTitle {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.categoryTitleUp {
+  top: 4.12%;
+  left: 6.37%;
+}
+
+.categoryTitleDown {
+  bottom: 8.63%;
+  left: 4.99%;
+}
+
+.categoryTitle32 {
+  font-size: 32px;
+}
+
+.categoryTitle24 {
+  font-size: 24px;
+}
+
+.categorySubTitleCaps {
+  text-transform: uppercase;
+}
+
+.categorySubTitleCaps:after {
+  content: "!";
+}
+
+//CATEGORIES CONTAINER
+.categoriesContainer {
+  padding-top: 51px;
+  padding-bottom: 52px;
+  height: 685px;
+}
+
+.categories {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  column-gap: 30px;
+
+  .categoriesTileXl {
+    flex: 1 1 377px;
+    margin-right: 5px;
+  }
+
+  .categoriesTileContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    flex: 1 1 781px;
+
+    .categoriesTileRow {
+      display: flex;
+      column-gap: 30px;
+      align-items: stretch;
+      flex: 1 1 50%;
+
+      .categoriesTileMd {
+        flex: 1 1 481px;
+      }
+
+      .categoriesTileSm {
+        flex: 1 1 277px;
+      }
+    }
+  }
+}
+
+//TABLET
+@media screen and (max-width: 1200px) and (min-width: 321px) {
+
+}
+
+//MOBILE
+@media screen and (max-width: 320px) {
+  .categoriesContainer {
+    height: 494px;
+    padding: 24px 16px 16px;
+  }
+
+  .categories {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+
+    .categoriesTileXl {
+      flex: 1 1 288px;
+      height: 262px;
+      margin-right: 0px;
+    }
+    .categoriesTileContainer {
+      flex: 1 1 176px;
+
+      .categoriesTileRow {
+        overflow: hidden;
+        column-gap: 16px;
+      }
+
+      .categoriesTileRow:first-child div {
+        width: 100%;
+      }
+
+      .categoriesTileRow:last-child {
+        display: none;
+      }
+    }
+
+    .tileSlider {
+      & > * {
+        .category {
+          width: 176px;
+          height: 176px;
+        }
+      }
+    }
+  }
+
+  .categoryTitle32 {
+    font-size: 24px;
+  }
+}

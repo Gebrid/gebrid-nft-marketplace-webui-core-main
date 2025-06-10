@@ -1,0 +1,38 @@
+.partners {
+  padding: 100px 0;
+
+  @media screen and (max-width: 320px) {
+    padding: 24px 0;
+  }
+}
+
+.partnersLight {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #FFFFFF;
+}
+
+.partnersDark {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #333333;
+}
+
+.partnerWrapper {
+  position: relative;
+  text-align: center;
+  width: 132px;
+  height: 132px;
+
+  @media screen and (max-width: 320px) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.partnersRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 135px;
+  justify-content: center;
+
+  @media screen and (max-width: 320px) {
+    gap: 24px 19px;
+  }
+}

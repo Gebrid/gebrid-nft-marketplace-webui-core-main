@@ -1,0 +1,74 @@
+.videoCaption {
+  padding: 0 0 100px 0;
+  @media screen and (max-width: 320px) {
+    padding: 0 16px 24px;
+  }
+}
+
+.videoCaptionTitle {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 130%;
+  text-align: center;
+  margin: 0;
+
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+  }
+
+  .gradientText {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.videoCaptionDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  max-width: 585px;
+  margin: 16px auto;
+}
+
+.videoCaptionBg {
+  position: relative;
+  text-align: center;
+  margin-top: 72px;
+
+  @media screen and (max-width: 320px) {
+    margin-top: 0;
+  }
+}
+
+.videoCaptionPlay {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  background: linear-gradient(267.32deg, rgba(179, 100, 226, 0.4) -34.2%, rgba(87, 165, 248, 0.4) 85.42%), #FFFFFF;
+  padding: 40px 42px;
+  border-radius: 60px;
+  text-align: left;
+  cursor: pointer;
+
+}
+
+.videoCaptionPlayIcon {
+  width: 42px;
+  height: 42px;
+}
+
+.videoCaptionPlayIconLight {
+  color: white;
+}
+
+.videoCaptionPlayIconDark {
+  color: #333333;
+}

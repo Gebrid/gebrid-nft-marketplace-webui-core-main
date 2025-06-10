@@ -1,0 +1,135 @@
+.connectWalletWrapper {
+  min-height: 674px;
+  position: relative;
+}
+
+.connectWalletBg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  min-height: 674px;
+  background-position: top left;
+  background-image: url("/images/connect-wallet/bg.png");
+  background-size: cover;
+}
+
+.connectWalletTitle {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 130%;
+  text-align: center;
+  margin-top: 1.5em;
+
+  .connectWalletTitleBlue {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.connectWalletDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.3px;
+  max-width: 350px;
+  margin: 16px auto;
+}
+
+.connectWalletButton {
+  border-radius: 60px;
+  height: 72px;
+  width: 462px;
+  border: 1px solid #C4C4C4;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: 42px auto 16px;
+  padding: 24px 32px;
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  cursor: pointer;
+
+  .connectWalletButtonIcon {
+    width: 26px;
+    height: 24px;
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    margin-top: -12px;
+  }
+
+  .connectWalletButtonName {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: white !important;
+    width: 100%;
+  }
+}
+
+.connectWalletButtonSoon {
+  border-radius: 60px;
+  height: 72px;
+  width: 462px;
+  border: 1px solid #C4C4C4;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  position: relative;
+  margin: 16px auto;
+  padding: 24px 32px;
+
+  .connectWalletButtonSoonIcon {
+    width: 26px;
+    height: 24px;
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    margin-top: -12px;
+  }
+
+  .connectWalletButtonSoonLabelHolder {
+    width: 55px;
+    height: 26px;
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    margin-top: -12px;
+    background: linear-gradient(274.54deg, rgba(179, 100, 226, 0.1) 0%, rgba(87, 165, 248, 0.1) 100%);
+    text-align: center;
+    padding: 0;
+
+    .connectWalletButtonSoonLabel {
+      background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%), #32D74B;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 100%;
+    }
+  }
+
+  .connectWalletButtonSoonName {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    width: 100%;
+  }
+}

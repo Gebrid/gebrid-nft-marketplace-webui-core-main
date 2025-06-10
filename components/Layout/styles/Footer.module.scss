@@ -1,0 +1,239 @@
+.footer {
+  padding: 62px 0;
+  box-shadow: 0px 12px 12px rgba(175, 160, 176, 0.1);
+}
+
+.footerLight {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%);
+}
+
+.footerDark {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #333333;
+}
+
+.footerRow {
+  @media screen and (max-width: 991px) and (min-width: 321px) {
+    & > div:first-child {
+      .logo {
+        text-align: center;
+      }
+    }
+  }
+
+  & > * {
+    @media screen and (max-width: 991px) and (min-width: 321px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+}
+
+.blue {
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.joinCommunity {
+  margin-top: 72px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.whiteTextForDarkMode {
+  color: #FFFFFF;
+}
+
+.subscribe {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.subscribeFormWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-color: transparent;
+  border-radius: 35px;
+  width: 380px;
+}
+
+.subscribeFormWrapperLight {
+    background: white;
+}
+
+.subscribeFormWrapperDark {
+  background: #333333;
+}
+
+.subscribeEmailLight {
+  border: 0;
+  align-items: center;
+  opacity: 0.9;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.subscribeEmailDark {
+  border: 0;
+  align-items: center;
+  opacity: 0.9;
+  font-weight: 400;
+  font-size: 16px;
+  background: #333333;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 29px;
+  border-radius: 24px;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.buttonPrimary {
+  background: linear-gradient(89.97deg, #B364E2 0.03%, #57A5F8 99.97%), #FFFFFF;
+  color: white !important;
+  border: 0;
+}
+
+.socialIcon {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.3);
+  padding-top: 10px;
+  border-radius: 26px;
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.socialIconDark {
+  color: #FFFFFF;
+}
+
+.navigation {
+  display: block;
+  a {
+    display: block;
+    color: #333333;
+  }
+}
+
+.navigationDark {
+  display: block;
+  a {
+    display: block;
+    color: #FFFFFF;
+  }
+}
+
+.copyright {
+  margin-top: 89px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 17px 16px 24px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .joinCommunity {
+    text-align: center;
+    margin: 0;
+  }
+
+  .socialIcon {
+    margin: 16px 0 24px;
+  }
+
+  .subscribe {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .subscribeFormWrapper {
+    width: 100%;
+    margin-bottom: 24px;
+
+    .button {
+      padding: 12px 15.44px;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin-top: 24px;
+  }
+
+  .navLink {
+    flex-basis: 40%;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 1;
+    }
+  }
+}
+
+.navLinkDark {
+  display: flex;
+  color: white !important;
+  padding: 10px 16px !important;
+
+  &:hover, &:active, &:focus {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%), #333333;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.navLinkLight {
+  color: #333333 !important;
+  padding: 10px 16px !important;
+
+  &:hover, &:active, &:focus {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.navLinkActive {
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

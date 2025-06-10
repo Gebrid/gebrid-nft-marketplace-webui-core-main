@@ -1,0 +1,167 @@
+//EXPLORE NFT WRAPPER FOR THEMES
+
+.wrapperCommon {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 991px) and (min-width: 321px){
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.wrapperDark {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #333333;
+}
+
+.wrapperLight {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #FFFFFF;
+}
+
+//EXPLORE NFT WRAPPER FOR ELEMENTS
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+
+  .controlRow {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    align-items: center;
+
+    .title {
+      font-weight: 800;
+      font-size: 52px;
+    }
+
+    //Dropdown menu can be found in globals.scss (.dropdownPeriod and .dropdownPeriodDark)
+
+    .controlButtons {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      border: 1px solid;
+      border-radius: 68px;
+      padding: 8px;
+      margin-left: 32px;
+
+      @media screen and (max-width: 905px) and (min-width: 321px){
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      .controlButton {
+        padding: 12px 0;
+        font-size: 14px;
+        font-weight: 600;
+
+        &:last-child {
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.controlButtonsDark {
+  border-color: rgb(255, 255, 255, 0.3) !important;
+}
+
+.controlButtonsLight {
+  border-color: #333333;
+}
+
+.controlButtonSelected {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  background: #333333;
+  border-radius: 24px;
+  color: #FFFFFF !important;
+}
+
+.gradientButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.wrapper {
+  > .gradientButtonContainer {
+    display: none;
+  }
+}
+
+//Slick slider adjustments can be found in global.scss
+
+.sliderArrowWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .sliderArrowIcon {
+    width: 50%;
+    height: 50%;
+    color: #333333 !important;
+  }
+}
+
+
+//TABLET
+@media screen and (max-width: 1200px) and (min-width: 321px) {
+  .gradientButtonContainer {
+    margin-left: 0;
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 320px) {
+  .exploreContainer {
+    padding: 24px 16px 16px
+  }
+
+  .wrapperCommon {
+    padding: 0px;
+  }
+
+  .wrapperLight{
+    background: #FFFFFF;
+  }
+
+  .wrapper {
+    row-gap: 16px;
+
+    > .gradientButtonContainer {
+      display: block;
+      margin: 0px;
+
+      & > button {
+        padding: 16px 120px !important;
+      }
+    }
+
+    .controlRow {
+
+      .title {
+        font-size: 24px;
+      }
+
+      .controlButtons {
+        margin-left: 0px;
+        margin-top: 12px;
+        .controlButton {
+          font-size: 12px;
+        }
+      }
+
+      .gradientButtonContainer {
+        display: none;
+      }
+    }
+  }
+
+}
+

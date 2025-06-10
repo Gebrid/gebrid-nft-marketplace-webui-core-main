@@ -1,0 +1,3 @@
+export const NFT_SET_AUDIO_TRACKS = 'NFT_SET_AUDIO_TRACKS';
+export const NFT_AUDIO_PLAY = 'NFT_AUDIO_PLAY';
+export const NFT_AUDIO_STOP = 'NFT_AUDIO_STOP';

@@ -1,0 +1,114 @@
+.values {
+  padding: 75px 0;
+  position: relative;
+
+  @media screen and (max-width: 320px){
+    padding: 16px;
+  }
+}
+
+.valuesBg {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  left: -325px;
+  top: 50%;
+  margin-top: -260px;
+
+  background: radial-gradient(70.04% 70.04% at 50% 50%, #B364E2 0%, #57A5F8 100%);
+  opacity: 0.1;
+  filter: blur(102px);
+}
+
+.headerCol {
+  @media screen and (max-width: 320px) {
+    padding: 0;
+  }
+}
+
+.header {
+  height: 74px;
+  padding: 20px 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 130%;
+
+  @media screen and (max-width: 320px) {
+    height: auto;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 24px;
+  }
+}
+
+.gradientText {
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cardsWrapper {
+  padding: 100px 0;
+
+  @media screen and (max-width: 320px) {
+    padding: 0;
+  }
+
+}
+
+.card {
+  text-align: center;
+  padding: 0 19px;
+
+  @media screen and (max-width: 320px) {
+    padding: 0 9px;
+  }
+}
+
+.cardIcon {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  padding: 39px;
+  margin: 0 auto;
+}
+
+.cardIconFirst {
+  background: linear-gradient(274.54deg, rgba(179, 100, 226, 0.4) 0%, rgba(87, 165, 248, 0.4) 100%), #FFFFFF;
+}
+
+.cardIconSecond {
+  background: linear-gradient(267.32deg, rgba(179, 100, 226, 0.4) -34.2%, rgba(87, 165, 248, 0.4) 85.42%), #FFFFFF;
+}
+
+.cardIconThird {
+  background: linear-gradient(279.49deg, rgba(179, 100, 226, 0.4) 0%, rgba(87, 165, 248, 0.4) 145.03%), #FFFFFF;
+}
+
+.cardIconFourth {
+  background: linear-gradient(197.77deg, rgba(179, 100, 226, 0.4) -42.09%, rgba(87, 165, 248, 0.4) 79.71%), #FFFFFF;
+}
+
+.cardTextWrapper {
+  margin-top: 24px;
+}
+
+.cardTitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 16px 0;
+}
+
+.cardDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 8px 0;
+
+  @media screen and (max-width: 320px) {
+    margin-bottom: 24px;
+  }
+}

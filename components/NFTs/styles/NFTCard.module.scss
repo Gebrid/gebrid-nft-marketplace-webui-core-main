@@ -1,0 +1,179 @@
+.avatar {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.nftCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+  border: 1px solid #949494;
+  padding: 16px;
+  border-radius: 24px;
+  margin-top: 16px;
+  background-color: #FFFFFF;
+
+  .nftCardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nftCardHeaderText {
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+      color: #333333;
+      font-size: 14px;
+      opacity: 0.8;
+
+      .nftCardHeaderTextTitle {
+        font-weight: 400;
+      }
+
+      .nftCardHeaderTextAddress {
+        font-weight: 500;
+      }
+    }
+
+    .nftCardHeaderFavIconWrapper {
+      width: 20px;
+      height: 20px;
+
+      .nftCardHeaderFavIcon {
+        width: 100%;
+        height: 100%;
+        color: #C4C4C4;
+      }
+    }
+  }
+
+  .nftCardPreview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .nftCardFooter {
+    display: flex;
+    flex-direction: column;
+
+    .nftCardFooterFirstRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+
+      .nftCardName {
+        color: #333333;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .nftCardFooterSecondRow {
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+
+      .nftCardPrice {
+        color: #333333;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        .wETH{
+          opacity: 0.5;
+        }
+      }
+
+      .nftCardCategory {
+        background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .nftCartBuyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > button {
+      width: 100%;
+
+      @media screen and (max-width: 700px) and (min-width: 321px){
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+      }
+    }
+  }
+}
+
+.nftCardDark {
+  background-color: #333333;
+}
+
+.whiteTextForDarkMode {
+  color: #FFFFFF !important;
+}
+
+
+.NFTCardAudio {
+  position: relative;
+
+  .NFTCardAudioBarHolder {
+    width: 230px;
+    height: 54px;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    margin-left: -115px;
+    background: linear-gradient(267.32deg, rgba(179, 100, 226, 0.4) -34.2%, rgba(87, 165, 248, 0.4) 85.42%), #FFFFFF;
+    backdrop-filter: blur(35px);
+    border-radius: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    .NFTCardAudioControl {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: white;
+      margin-top: 12px;
+      margin-left: 12px;
+      padding: 3px;
+      color: #57A5F8 !important;
+    }
+
+    .NFTCardAudioWavesHolder {
+      width: 160px;
+      height: 30px;
+      overflow: hidden;
+      margin-top: 12px;
+      margin-left: 6px;
+
+      .NFTCardAudioWaves {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nftCard {
+    height: 468px;
+  }
+}

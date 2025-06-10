@@ -1,0 +1,168 @@
+.profile {
+  padding: 32px 0;
+}
+
+.profileCoverWrapper {
+  background: #F4F4F4;
+  border-radius: 24px;
+  height: 340px;
+  position: relative;
+
+  &.dark {
+    background: rgba(255,255,255,0.2);
+  }
+
+  .addCover {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    padding: 12px 19px;
+    border-radius: 24px;
+    line-height: 130%;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 115px;
+    background: white;
+    border: 0;
+    font-size: 14px;
+
+    &.dark {
+      background: #333333;
+      color: white !important;
+    }
+
+    @media (max-width: 592px) {
+      top: 32px;
+      bottom: auto;
+    }
+  }
+}
+
+.profileDataWrapper {
+  margin-top: -70px;
+  text-align: center;
+
+  .profileImageWrapper {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 70px;
+    border: 4px solid white;
+  }
+
+  .profileAddressWrapper {
+    display: flex;
+    align-items: center;
+    background: #F4F4F4;
+    border-radius: 24px;
+    max-width: 150px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    margin: 12px auto;
+    padding: 4px 16px;
+
+    .profileAddressIcon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .profileAddress {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 130%;
+      margin-left: 8px;
+
+      &.dark {
+        color: #333333 !important;
+      }
+    }
+  }
+
+  .profileFollowerWrapper {
+    width: 190px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .profileFollowersCount {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    .profileFollowersLabel {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+    }
+  }
+
+  .profileControlsWrapper {
+    width: 200px;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .profileEditButton {
+      background: transparent;
+      border: 1px solid #C4C4C4;
+      border-radius: 42px;
+      width: 112px;
+      height: 42px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    .profileShareButton {
+      background: transparent;
+      border: 1px solid #C4C4C4;
+      border-radius: 24px;
+      cursor: pointer;
+      height: 42px;
+      min-width: 42px;
+      padding: 11px 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+    }
+  }
+}
+
+.profileTabsWrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #cccccc;
+
+  .profileTabs {
+    min-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+
+    .profileTab {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      padding: 8px 12px;
+      opacity: 0.3;
+      cursor: pointer;
+
+      &.active {
+        opacity: 1;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+}

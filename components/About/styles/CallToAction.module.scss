@@ -1,0 +1,72 @@
+.ctaWrapper {
+  padding: 100px 0;
+  position: relative;
+
+  @media screen and (max-width: 320px) {
+    padding: 24px 16px;
+  }
+}
+
+.ctaBg {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  left: 50%;
+  top: 50%;
+  margin-top: -180px;
+  margin-left: -180px;
+
+  background: radial-gradient(70.04% 70.04% at 50% 50%, #B364E2 0%, #57A5F8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.1;
+  filter: blur(102px);
+}
+
+.ctaCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.ctaTitle {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+    font-weight: 800;
+    width: 167px;
+  }
+}
+
+.ctaDescription {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 650px;
+  margin: 16px auto;
+}
+
+.ctaActionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: 320px) {
+    & > button {
+      width: 100%;
+    }
+  }
+}

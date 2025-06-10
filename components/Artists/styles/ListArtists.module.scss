@@ -1,0 +1,61 @@
+.wrapper {
+  padding-bottom: 70px;
+}
+
+.wrapperDark {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #333333;
+}
+
+.wrapperLight {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #FFFFFF;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 52px;
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.slider {
+  margin-top: 10px;
+}
+
+.gradientButtonContainer.duplicateButton {
+  display: none;
+}
+
+.gradientButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 112px;
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    padding: 0;
+  }
+  .listArtistsContainer {
+    padding: 16px !important;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .gradientButtonContainer {
+    display: none;
+  }
+
+  .gradientButtonContainer.duplicateButton {
+    display: block;
+    width: 100%;
+
+    & > button {
+      width: 100%;
+    }
+  }
+}

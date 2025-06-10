@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+//SLICK SLIDER CONFIGS
+.slick-prev:before, .slick-next:before  {
+  content: none !important;
+}
+
+.slick-slide > div {
+  padding: 0px 15px 42px;
+}
+
+.slick-list {
+  margin: 0 -15px;
+}
+
+.sliderArrowWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .sliderArrowIcon {
+    width: 50%;
+    height: 50%;
+    color: #333333 !important;
+  }
+}
+
+.sliderButton {
+  display: block;
+  position: absolute;
+  background: #EDECFD !important;
+  content: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 9999px;
+  border: 1px solid #949494;
+  margin-top: -20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  &::before {
+    content: '';
+  }
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 130%;
+}
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+a:focus,
+button:focus,
+input:focus,
+:focus {
+  outline: none !important;
+}
+
+a::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+::-moz-focus-inner {
+  border: 0 !important;
+}
+
+.theme-light {
+  background: white;
+
+  h1, h2, h3, h4, h5, h6, p, a, span, div, strong, button, input {
+    color: #333333;
+  }
+}
+
+.theme-dark {
+  background: #333333;
+
+  h1, h2, h3, h4, h5, h6, p, a, span, div, strong, button, input {
+    color: white;
+  }
+}
+
+
+.hide-xs {
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+
+.hide-sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hide-md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hide-lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hide-xl {
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    display: none;
+  }
+}
+
+.hide-xxl {
+  @media (min-width: 1400px) {
+    display: none;
+  }
+}
+
+.hide-xs-sm {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hide-xs-md {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hide-xs-lg {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hide-xs-xl {
+  @media (max-width: 1399px) {
+    display: none;
+  }
+}
+
+.hide-sm-md {
+  @media (min-width: 576px) and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hide-sm-lg {
+  @media (min-width: 576px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hide-sm-xl {
+  @media (min-width: 576px) and (max-width: 1399px) {
+    display: none;
+  }
+}
+
+.hide-sm-xxl {
+  @media (min-width: 576px) {
+    display: none;
+  }
+}
+
+.hide-md-lg {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hide-md-xl {
+  @media (min-width: 768px) and (max-width: 1399px) {
+    display: none;
+  }
+}
+
+.hide-md-xxl {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hide-lg-xl {
+  @media (min-width: 992px) and (max-width: 1399px) {
+    display: none;
+  }
+}
+
+.hide-lg-xxl {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.hide-xl-xxl {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+
+.qwe {
+  width: 42px;
+  height: 42px;
+}
+
+
+.dropdownPeriod {
+  display: inline-block;
+  line-height: 130%;
+  margin-left: 10px;
+  margin-top: 0px;
+
+  button {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 130%;
+    border: none;
+    padding: 0;
+
+    &:active, &:focus, &::-moz-focus-inner {
+      border: none;
+      outline: none;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    & > div {
+      display: inline-block;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: white;
+    z-index: 100;
+    width: 192px;
+    padding: 16px;
+    margin-left: 10px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+
+    .dropdown-item {
+      z-index: 200;
+      height: 42px;
+      padding-top: 10px;
+      background: none;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+
+      &.active {
+        background: none;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 10px;
+          right: 16px;
+          width: 20px;
+          height: 20px;
+          background: url("/images/icons/icon-dropdown-selected.svg") right center no-repeat;
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        background: linear-gradient(274.54deg, rgba(179,100,226,0.2) 0%, rgba(87,185,248,0.2) 100%) !important;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.dropdownPeriodDark {
+
+  .dropdown-menu {
+    background: #333333;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    border-image: linear-gradient(45deg, #B364E2, #57A5F8) 1;
+
+
+    .dropdown-item {
+      color: #FFFFFF;
+
+      &:hover, &:active, &:focus {
+        background: linear-gradient(274.54deg, rgba(179,100,226,0.8) 0%, rgba(87,185,248,0.8) 100%) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dropdownPeriod button {
+    font-size: 24px;
+
+    & > div {
+      width: 10px;
+    }
+  }
+
+  .slick-slide > div {
+    padding-bottom: 0px;
+  }
+
+  .sliderButton {
+    width: 32px;
+    height: 32px;
+  }
+
+  .slick-next {
+    right: -14px;
+  }
+
+  .slickAdjust .slick-slide > div {
+    padding: 0px 0px 24px;
+  }
+
+  .slickAdjust .slick-next {
+    right: -25px;
+  }
+
+  .titleCol {
+    padding: 0;
+  }
+
+  .tileSlider {
+    .slick-list {
+      .slick-track {
+        .slick-slide:first-child {
+          margin-right: 105px;
+        }
+      }
+    }
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@import "../components/Layout/styles/Header.global";
+@import "../components/Theme/styles/Switcher.global";
+@import "../components/NFTCreate/styles/CreateNFT.global";
+@import "../components/About/styles/Lead.global";

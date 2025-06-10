@@ -1,0 +1,109 @@
+.wrapper {
+  position: relative;
+  padding: 100px 0;
+}
+
+.wrapperBg {
+  position: absolute;
+  width: 680px;
+  height: 680px;
+  left: 50%;
+  top: 350px;
+  margin-left: -340px;
+  background: radial-gradient(70.04% 70.04% at 50% 50%, #B364E2 0%, #57A5F8 100%);
+  opacity: 0.1;
+  filter: blur(102px);
+  border-radius: 340px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 130%;
+}
+
+.gradientText {
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cardCol {
+ z-index: 2;
+}
+
+.cardWrapper {
+  width: 277px;
+  height: 282px;
+  padding: 42px 0;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 8px 12px 12px rgba(179, 100, 226, 0.05);
+  border-radius: 16px;
+  background-color: white;
+  margin: 72px auto;
+
+}
+
+.cardWrapperDark {
+  background: linear-gradient(274.54deg, rgba(179, 100, 226, 0.2) 0%, rgba(87, 165, 248, 0.2) 100%), #333333 !important;
+  box-shadow: 8px 12px 12px rgba(179, 100, 226, 0.05);
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
+.cardAction {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.cardActionArrow {
+  display: inline-block;
+  margin-top: 2px !important;
+}
+
+@media screen and (max-width: 320px) {
+  .cardCol {
+    padding: 0;
+  }
+  .wrapper {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 0;
+    padding: 0;
+    width: 288px;
+    height: 233px;
+    background: #FFFFFF;
+  }
+
+  .cardWrapper:first-child {
+    margin-top: 24px;
+
+    .cardTitle {
+      margin: 24px 0 16px;
+    }
+  }
+}

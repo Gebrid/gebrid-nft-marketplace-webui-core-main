@@ -1,0 +1,109 @@
+.caption {
+  padding: 75px;
+  @media screen and (max-width: 320px){
+    padding: 24px 16px 16px;
+  }
+}
+
+.captionTitle {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+
+  @media screen and (max-width: 320px){
+    font-size: 24px;
+  }
+
+  .gradientText {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    @media screen and (max-width: 320px){
+      font-size: 24px;
+    }
+  }
+}
+
+.captionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 133px;
+  flex-wrap: nowrap;
+
+  @media screen and (max-width: 991px) and (min-width: 321px){
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 320px){
+    flex-direction: column;
+  }
+
+  .captionImage {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    width: auto;
+    padding: 25%;
+
+    @media screen and (max-width: 991px) {
+      padding: 50%;
+      margin-bottom: 24px;
+    }
+
+    & > span > img {
+      max-width:100%;
+      height:auto;
+    }
+    
+    @media screen and (max-width: 991px) and (min-width: 321px){
+      order: 1;
+      margin-top: 40px;
+    }
+
+  }
+
+  .captionTextWrapper {
+    flex: 0 1 482px;
+
+    @media screen and (max-width: 320px){
+      flex: 1 1 0;
+     padding: 0;
+    }
+  }
+}
+
+.captionText {
+  padding: 16px 0;
+}
+
+.captionActionWrapper {
+  padding: 16px 0;
+
+  @media screen and (max-width: 320px){
+    padding: 0;
+    margin-bottom: 16px;
+    & > button {
+      width: 100%;
+    }
+  }
+}
+
+.captionAction {
+  padding: 12px 19px;
+  border-radius: 24px;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  color: white !important;
+  border: none;
+}

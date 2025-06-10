@@ -1,0 +1,65 @@
+.filters {
+  display: flex;
+  margin-top: 42px;
+  margin-bottom: 72px;
+  column-gap: 16px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+
+  & > div:last-child {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    & > div:last-child {
+      margin-left: 0px;
+    }
+
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+  margin-top: 25px;
+}
+
+//PRICE RANGE FILTER
+.coinSelector {
+  .coinSelectButtonWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #DFE1E6;
+    width: 100%;
+
+
+    & > div {
+      padding: 15px 0px 15px 12px;
+      width: 100%;
+      background: transparent;
+    }
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      justify-content: flex-end;
+    }
+  }
+
+  .coinSelectDropdown {
+
+  }
+}
+
+.priceRange {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  margin-top: 16px;
+}

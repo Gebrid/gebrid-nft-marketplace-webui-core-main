@@ -1,0 +1,117 @@
+.wrapper {
+  padding-bottom: 58px;
+
+  @media screen and (max-width: 991px) and (min-width: 321px){
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.wrapperDark {
+  background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #333333;
+}
+
+.wrapperLight {
+ background: linear-gradient(89.97deg, rgba(179, 100, 226, 0.2) 0.03%, rgba(87, 165, 248, 0.2) 99.97%), #FFFFFF;
+}
+
+.wrapperFirst {
+  padding-top: 100px;
+}
+
+.headerCol {
+  margin-bottom: 72px;
+}
+.headerLeft {
+  height: 74px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+}
+
+.headerRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.gradientButtonContainer.duplicateButton {
+  display: none;
+}
+
+.gradientText {
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 19px;
+  border-radius: 24px;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.buttonPrimaryReverse {
+  width: 112px;
+  background: linear-gradient(89.97deg, #B364E2 0.03%, #57A5F8 99.97%), #FFFFFF;
+  color: white !important;
+  border: 0;
+}
+
+.slider {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.gradientButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    padding: 16px !important;
+
+    .duplicateButton.gradientButtonContainer {
+      display: block;
+
+      & > button {
+        padding: 16px 120px !important;
+      }
+    }
+  }
+  .headerCol {
+    margin: 0;
+
+    .headerLeft {
+      .title {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .headerRight {
+    .gradientButtonContainer {
+      display: none;
+    }
+  }
+
+
+
+}

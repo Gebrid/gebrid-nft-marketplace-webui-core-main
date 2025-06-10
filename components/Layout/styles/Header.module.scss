@@ -1,0 +1,252 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  padding: 16px;
+  z-index: 3;
+  background: #FFFFFF;
+  max-width: 100%;
+  box-shadow: 0 12px 12px rgba(175, 160, 176, 0.02);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+
+    .headerLogo {
+      position: relative;
+      flex-shrink: 0;
+      cursor: pointer;
+      width: 110px;
+      height: 32px;
+    }
+
+    .searchBox {
+      display: flex;
+      flex: 1 1 277px;
+      align-items: center;
+      align-content: center;
+      border-radius: 42px;
+      padding: 12px 19px;
+      background: #F5F5F5;
+      margin: 0 30px;
+      max-width: 277px;
+
+      .searchIcon {
+        width: 12.52px;
+        height: 12.84px;
+        color: #c4c4c4;
+        margin-right: 4px;
+      }
+
+      .searchInput {
+        flex: 1 1 0%;
+        background: transparent;
+        outline: none;
+        font-size: 14px;
+      }
+    }
+
+    .headerMenu {
+      display: flex;
+    }
+
+    .primaryButton, .secondaryButton {
+      margin-right: 24px;
+    }
+  }
+}
+
+.headerContainerDark {
+  background: #333333;
+}
+
+
+.navLinkDark {
+  display: flex;
+  color: white !important;
+  padding: 10px 16px !important;
+
+  &:hover, &:active, &:focus {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%), #333333;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.navLinkLight {
+  color: #333333 !important;
+  padding: 10px 16px !important;
+
+  &:hover, &:active, &:focus {
+    background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.navLinkActive {
+  background: linear-gradient(274.54deg, #B364E2 0%, #57A5F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.profileImage {
+  display: inline-block;
+  margin: 8px 0 0 12px;
+  width: 32px;
+  height: 32px;
+  transform: rotate(90deg);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.headerCollapsed {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2 !important;
+
+  .headerCollapsedButtonGroup {
+    display: flex;
+
+    .searchBoxForCollapsedMenu {
+      display: flex;
+      position: absolute;
+      background: #FFFFFF;
+      top: 50px;
+      left: 0px;
+      padding: 39px 16px 42px;
+      width: 100%;
+      height: auto;
+
+      .searchBox {
+        flex: 1 1 0;
+        border-radius: 42px;
+        padding: 12px 19px;
+        background: #F5F5F5;
+
+        .searchIcon {
+          margin-right: 4px;
+          width: 12.52px;
+          height: 12.84px;
+          color: #c4c4c4;
+        }
+
+        & input {
+          background: transparent;
+        }
+      }
+    }
+
+    .headerCollapsedMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background-color: white;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      padding: 39px 16px 42px;
+
+      .headerMenu {
+        align-self: flex-start;
+        & > * {
+          padding-bottom: 8px !important;
+        }
+      }
+
+      .dividerLine {
+        color: #333333;
+        opacity: 0.3;
+        width: 100%;
+        margin: 90px 0 16px;
+      }
+
+      .socialMediaButtons {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 8px;
+
+        .socialMediaButton {
+          border: 1px solid #C4C4C4;
+          border-radius: 48px;
+          width: 48px;
+          height: 48px;
+
+          & > * {
+            margin: 0;
+
+            & > * {
+              margin: 0;
+              font-size: 19.2px;
+              padding-right: 4px;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      .primaryButton, .secondaryButton {
+        & > * {
+          padding-right: 88.5px !important;
+          padding-left: 88.5px !important;
+        }
+      }
+
+      .secondaryButton {
+        & > * {
+          padding-right: 103px !important;
+          padding-left: 103px !important;
+        }
+      }
+    }
+    .profileRound {
+      .profileImage {
+          margin: 0;
+          border-radius: 32px;
+      }
+    }
+  }
+}
+
+.roundButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C4C4C4;
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+
+  .roundButtonIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.roundButtonIconDark {
+  color: #FFFFFF;
+}
+
+.headerCollapsedMenuDark {
+  background: #333333 !important;
+}
+
+.dividerLineDark {
+  color: #c4c4c4 !important;
+}
+
+.searchBoxForCollapsedMenuDark {
+  background: #333333 !important;
+}
